@@ -1,33 +1,30 @@
-// 俳句のパターン
-const haikuPatterns = [
-    ["青い空", "白い雲", "夏の日"],
-    ["秋の風", "紅葉の葉", "静かな朝"],
-    ["花が咲く", "風に揺れる", "春の日"],
-    // さらに他のパターンを追加できます
-];
+const nouns = ["青い空", "白い雲", "秋の風", "紅葉の葉", "花が咲く"];
+const verbs = ["揺れる", "歌う", "流れる", "咲く", "響く"];
+const adjectives = ["静かな", "明るい", "深い", "新しい", "遠い"];
 
 // ボタン要素を取得
 const generateButton = document.getElementById("generateButton");
 
-// 俳句の各行を表示する要素を取得
-const lineElements = document.querySelectorAll(".line");
+// 俳句を表示する要素を取得
+const haikuElement = document.getElementById("haiku");
 
 // ボタンがクリックされたときの処理
 generateButton.addEventListener("click", () => {
-    const haiku = generateHaiku(haikuPatterns);
-    for (let i = 0; i < haiku.length; i++) {
-        lineElements[i].textContent = haiku[i];
-    }
+    const haiku = generateHaiku();
+    haikuElement.textContent = haiku;
 });
 
 // ランダムな俳句を生成する関数
-function generateHaiku(patterns) {
-    const pattern = getRandomPattern(patterns);
-    return pattern;
+function generateHaiku() {
+    const noun = getRandomElement(nouns);
+    const verb = getRandomElement(verbs);
+    const adjective = getRandomElement(adjectives);
+    
+    return `${adjective} ${noun}が ${verb}`;
 }
 
-// ランダムな俳句パターンを選ぶ関数
-function getRandomPattern(patterns) {
-    const randomIndex = Math.floor(Math.random() * patterns.length);
-    return patterns[randomIndex];
+// 配列からランダムな要素を取得する関数
+function getRandomElement(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
 }
