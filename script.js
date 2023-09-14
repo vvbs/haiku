@@ -19,7 +19,7 @@ function generateHaiku() {
     const noun = getRandomElement(nouns);
     const verb = getRandomElement(verbs);
     const adjective = getRandomElement(adjectives);
-        return `${adjective} ${noun} ${verb}`;
+        return `${adjective} ${noun}が ${verb}`;
 }
 
 // 配列からランダムな要素を取得する関数
