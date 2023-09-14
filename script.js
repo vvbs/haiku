@@ -1,5 +1,5 @@
-const nouns = ["青い空", "白い雲", "秋の風", "紅葉の葉", "小さなつぼみ"];
-const verbs = ["揺れにけり", "風そよぐ", "夜の坂", "ながれけり", "焚火かな"];
+const nouns = ["青い空", "白い雲", "秋の風", "紅葉の葉", "小さなつぼみ","真昼の眠気","故郷の路に","空青きまま","身にまとふもの","横断歩道"];
+const verbs = ["揺れにけり", "風そよぐ", "夜の坂", "ながれけり", "焚火かな",""];
 const adjectives = ["あの山の", "こぼれ落つ", "静かなり", "とりとめし", "なつかしや","のぼりゆく"];
 
 // ボタン要素を取得
@@ -20,7 +20,6 @@ function generateHaiku() {
     const verb = getRandomElement(verbs);
     const adjective = getRandomElement(adjectives);
     
-    return `${adjective} ${noun}が ${verb}`;
 }
 
 // 配列からランダムな要素を取得する関数
