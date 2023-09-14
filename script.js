@@ -6,10 +6,10 @@ const haikuPatterns = [
     // さらに他のパターンを追加できます
 ];
 
-// ボタン要素を取得
+// ボタン
 const generateButton = document.getElementById("generateButton");
 
-// 俳句を表示する要素を取得
+// 俳句を表示する要素
 const haikuElement = document.getElementById("haiku");
 
 // ボタンがクリックされたときの処理
