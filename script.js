@@ -1,6 +1,6 @@
 const nouns = ["青い空", "白い雲", "秋の風", "紅葉の葉", "小さなつぼみ"];
-const verbs = ["揺れる", "歌う", "流れる", "咲く", "響く"];
-const adjectives = ["静かだ", "明るい", "深い", "新しい", "遠い"];
+const verbs = ["揺れにけり", "風そよぐ", "夜の坂", "ながれけり", "焚火かな"];
+const adjectives = ["あの山の", "こぼれ落つ", "静かなり", "とりとめし", "なつかしや","のぼりゆく"];
 
 // ボタン要素を取得
 const generateButton = document.getElementById("generateButton");
