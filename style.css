@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -10,10 +12,12 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
 }
 
 h1 {
     color: #333;
+    font-size: 24px;
 }
 
 button {
@@ -23,6 +27,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 3px;
+    font-size: 16px;
 }
 
 button:hover {
@@ -33,4 +38,5 @@ button:hover {
     margin-top: 20px;
     font-style: italic;
     color: #777;
+    font-size: 18px;
 }
